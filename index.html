@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--head element -->
 <head>
-  <title>Dark Mode + Date & Time</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Ground Team - Kenya Gamestop Centre</title>
+  <link rel="stylesheet" href="csslab.css">
+  <link rel="stylesheet" href="gamesstyles.css">
+  <link rel="stylesheet" href="javastyle.css">
 </head>
+
+<!--body element -->
 <body onload="startClock()">
 
-  <div id="topBar">
+<div id="topBar">
     <div id="clock">Loading time...</div>
     <button onclick="toggleDarkMode()">
       <span class="icon" id="modeIcon">🌞</span>
@@ -14,9 +20,64 @@
     </button>
   </div>
 
-  <h1>Welcome to My Site</h1>
-  <p>This is a simple page showing live time and a dark mode toggle.</p>
+  <script src="204534_main.js"></script>
 
-  <script src="main.js"></script>
+<header>
+    <nav>
+      <a href="gameindex.html">Home</a>
+      <a href="gamelease.html">Lease a Game</a>
+      <a href="gameregister.html">Register</a>
+      <a href="gamecontact.html">Contact Us</a>
+      <a href="index.html">Meet our Ground Team</a>
+    </nav>
+  </header>
+<!--heading one div -->
+  <div class="header">
+    <h1>Ground Team - Kenya Gamestop Centre</h1>
+  </div>
+
+<!--div for the flip card;  card for 3D, inner for rotating element-->
+  <div class="lead-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="boss.jpg" alt="Lead Developer">
+          <h2>Alex Ray</h2>
+          <p>Store Manager</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Alex Ray</h2>
+          <p>10 years of experience in inventory management. No stone unturned!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--div for the team cards; smae class for all of them-->
+  <div class="team">
+    <div class="card">
+      <img src="woman.jpg" alt="Dev 1">
+      <h2>Jane Doe</h2>
+      <p>Game Tester</p>
+    </div>
+
+    <div class="card">
+      <img src="man.png" alt="Dev 2">
+      <h2>Sam Lee</h2>
+      <p>Cashier & Leases Supervisor</p>
+    </div>
+
+    <div class="card">
+      <img src="robot.png" alt="Dev 3">
+      <h2>RoboTest</h2>
+      <p>AI Store Assistant</p>
+    </div>
+
+   <div style="clear: both;"></div> 
+  </div>
+
+ <footer>
+    <p>&copy; 2025 Kenya GameStop Centre. All rights reserved.</p>
+  </footer>
 </body>
 </html>
