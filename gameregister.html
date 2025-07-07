@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Register | Kenya GameStop Centre</title>
 <link rel="stylesheet" href="gamesstyles.css">
-<link rel="stylesheet" href="javastyle.css"
   </style>
 </head>
 <body onload="startClock()">
@@ -18,6 +17,7 @@
   </div>
 
   <script src="204534_main.js"></script>
+  <script src="204534_register.js"></script>
   
   <header>
     <h1>Kenya GameStop Centre Game-Lease</h1>
@@ -36,6 +36,9 @@
       <label for="fullname">Full Name:</label>
       <input type="text" id="fullname" name="fullname" required><br>
 
+      <label for="dob">Age:</label>
+      <input type="date" id="dob" name="dob" required><br>
+
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br>
 
@@ -46,7 +49,14 @@
       <input type="tel" id="phone" name="phone"><br>
 
       <label for="gamename">Game to be leased:</label>
-      <input type="text" id="gamename" name="gamename"><br>
+<select id="gamename" name="gamename">
+  <option value="">-- Select an option --</option>
+  <option value="gtaiv">PS3: Grand Theft Auto IV</option>
+  <option value="fifa14">Xbox 360: FIFA 14 Ultimate Edition</option>
+  <option value="gt5">PS3: Gran Turismo</option>
+  <option value="gow2">PS2 Greatest Hits: God of War II</option>
+  <option value="rdr2">Xbox One: Red Dead Redemption 2 Ultimate Editon</option>
+</select>
 
       <label>
         <input type="radio" name="payment-method" value="card" checked>
@@ -81,3 +91,4 @@
   </footer>
 </body>
 </html>
+
